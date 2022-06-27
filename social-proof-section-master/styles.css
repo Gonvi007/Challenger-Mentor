@@ -76,8 +76,14 @@ header p {
     text-align: center;
 }
 /* Pal Cards */
-
-.cars {
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.cards {
     background-color: hsl(300, 43%, 22%);
     border-radius: 10px;
     max-width: 330px;
@@ -86,6 +92,31 @@ header p {
     margin: 16px 24px 0px 24px;
     color: hsl(300, 24%, 96%);
     font-size: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+.cards img {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 20px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.cards .name {
+    font-weight: 700;
+    grid-column: 2/3;
+}
+.cards .status {
+    color: hsl(333, 80% 67%);
+    grid-column: 2/3;
+}
+.cards p{
+    font-weight: 500;
+    line-height: 20px;
+    grid-column: 1/3;
+    margin-top: 30px;
 }
 
 /* Pal Footer */
