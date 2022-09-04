@@ -9,10 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&display=swap" rel="stylesheet">
     <title>Calculadora</title>
+    <!-- ANIMACION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="./Pantalla.js"></script>
+    <script src="./Calculadora.js"></script>
+    <script src="./main.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <div class="calculadora">
+        <div class=" animate__animated animate__bounceInLeft calculadora">
             <div class="pantalla">
                 <div id="valor-anterior"></div>
                 <div id="valor-actual"></div>
@@ -38,6 +44,5 @@
         </div>
 
     </div>
-    <script src="./main.js"></script>
 </body>
 </html>
