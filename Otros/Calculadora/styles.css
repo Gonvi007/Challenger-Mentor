@@ -46,7 +46,7 @@ button:focus {
 .col-2 {
     grid-column: span 2;
 }
-.pantalla {
+.display {
     grid-column: 1/-1;
     padding: 16px;
     display: flex;

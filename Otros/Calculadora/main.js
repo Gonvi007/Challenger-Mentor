@@ -1,10 +1,14 @@
-const pantallaValorAnterior = document.getElementById('valor-anterior');
-const pantallaValorActual = document.getElementById('valor-actual');
+const displayValorAnterior = document.getElementById('valor-anterior');
+const displayValorActual = document.getElementById('valor-actual');
 const botonesNumeros = document.querySelectorAll('.numero');
-const botonesOeradores = document.querySelectorAll('.operador');
+const botonesOperadores = document.querySelectorAll('.operador');
 
-const pantalla = new Pantalla(pantallaValorAnterior, pantallaValorActual)
+const display = new Display(displayValorAnterior, displayValorActual);
 
 botonesNumeros.forEach(boton => {
-    boton.addEventListener('click', () => pantalla.agregarNumero(boton.innerHTML));
+    boton.addEventListener('click', () => display.agregarNumero(boton.innerHTML));
+});
+
+botonesOperadores.forEach(boton => {
+    boton.addEventListener('click', () => display.computar(boton.value))
 });
